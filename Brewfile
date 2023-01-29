@@ -23,7 +23,6 @@ cask "1password"
 cask "karabiner-elements"
 cask "dropbox"
 cask "zoom"
-cask "readdle-spark"
 cask "fantastical"
 cask "alfred"
 cask "bartender"
@@ -44,3 +43,4 @@ cask "visual-studio-code"
 
 mas "Things 3", id: 904280696
 mas "HotspotShield VPN", id: 771076721
+mas "Spark Email", id: 1176895641
