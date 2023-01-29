@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "> [!CAUTION] TODO\n> ",
+    "uid" : "1D08A160-1B5F-4280-8895-76981EB0DFF4",
+    "name" : "TODO callout",
+    "keyword" : "todo"
+  }
+}

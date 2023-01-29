@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\\text{ {cursor} }",
+    "uid" : "B4867888-F2D7-48F0-8341-DC638DD93DC0",
+    "name" : "Expand KaTeX text",
+    "keyword" : "text"
+  }
+}

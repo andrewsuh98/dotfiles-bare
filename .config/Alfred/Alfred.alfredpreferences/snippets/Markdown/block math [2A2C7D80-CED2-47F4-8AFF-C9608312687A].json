@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "$$\n\\begin{align}\n{cursor}\n\\end{align}\n$$",
+    "dontautoexpand" : true,
+    "uid" : "2A2C7D80-CED2-47F4-8AFF-C9608312687A",
+    "name" : "block math",
+    "keyword" : "math"
+  }
+}

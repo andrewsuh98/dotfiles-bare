@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "> [!BUG]\n> ",
+    "uid" : "83CC93ED-D438-4EB3-983A-46BFB61A6578",
+    "name" : "bug callout",
+    "keyword" : "bug"
+  }
+}

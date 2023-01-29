@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\\lceil {cursor} \\rceil",
+    "uid" : "5387957D-6F8C-4185-91B7-90B50E959877",
+    "name" : "ceiling",
+    "keyword" : "ceil"
+  }
+}

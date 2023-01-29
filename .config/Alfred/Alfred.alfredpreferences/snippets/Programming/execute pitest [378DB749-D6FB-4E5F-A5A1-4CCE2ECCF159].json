@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : ".\/gradlew pitest",
+    "uid" : "378DB749-D6FB-4E5F-A5A1-4CCE2ECCF159",
+    "name" : "execute pitest",
+    "keyword" : "pit"
+  }
+}

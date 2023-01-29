@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "> [!ERROR] \n> ",
+    "uid" : "2FD82E57-19FF-485E-82AF-12893ABEEE1B",
+    "name" : "error callout",
+    "keyword" : "error"
+  }
+}
