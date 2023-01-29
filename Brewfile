@@ -42,5 +42,5 @@ cask "discord"
 cask "istat-menus"
 cask "visual-studio-code"
 
-mas "Things 3" id: 904280696
-mas "HotspotShield VPN" id: 771076721
+mas "Things 3", id: 904280696
+mas "HotspotShield VPN", id: 771076721
