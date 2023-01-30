@@ -6,22 +6,22 @@ install brew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+setup dotfiles repo
+https://www.atlassian.com/git/tutorials/dotfiles
+
 install oh my zsh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-get Brewfile
 install all apps using brew bundle
 ```
 brew bundle install
 ```
 
-download ledger live
-
 setup dropbox
 
-recover system and app settings using mackup
+download ledger live
 
 restart computer
 
