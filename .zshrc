@@ -136,3 +136,8 @@ autoload -U compinit && compinit u-
 # enable vim mode
 bindkey -v
 bindkey -M viins 'kj' vi-cmd-mode
+
+# pyenv configuration
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
