@@ -32,12 +32,14 @@ cask "microsoft-excel"
 cask "microsoft-powerpoint"
 cask "microsoft-word"
 cask "obsidian"
-cask "rectangle"
+cask "raycast"
 cask "slack"
 cask "soundsource"
 cask "spotify"
 cask "visual-studio-code"
+cask "vlc"
 cask "zoom"
+mas "Amphetamine", id: 937984704
 mas "Hotspot Shield", id: 771076721
 mas "Spark", id: 1176895641
 mas "Things", id: 904280696
