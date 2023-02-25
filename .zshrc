@@ -120,6 +120,7 @@ alias p10kconfig="nvim ~/.p10k.zsh"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias chrome="open -a 'Google Chrome'"
 alias python="python3"
+alias lg="lazygit"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
