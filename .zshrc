@@ -113,7 +113,7 @@ source $ZSH/oh-my-zsh.sh
 alias nv="nvim"
 alias zshconfig="nvim ~/.zshrc"
 alias vimconfig="nvim ~/.vimrc"
-alias nvimconfig="nvim ~/.config/nvim/init.lua"
+alias nvimconfig="nvim ~/.config/nvim/"
 alias nvimcolorscheme="nvim ~/.config/nvim/lua/andrewsuh/colorscheme.lua"
 alias nvimplugins="nvim ~/.config/nvim/lua/andrewsuh/plugins.lua"
 alias p10kconfig="nvim ~/.p10k.zsh"
@@ -138,8 +138,3 @@ autoload -U compinit && compinit u-
 # enable vim mode
 bindkey -v
 bindkey -M viins 'kj' vi-cmd-mode
-
-# pyenv configuration
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
