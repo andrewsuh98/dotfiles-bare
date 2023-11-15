@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : ".\/gradlew jacocoTestReport",
-    "uid" : "7A2A186F-9D3A-40ED-944D-4282D6C9F22E",
-    "name" : "run jacocoTestReport",
-    "keyword" : "jacoco"
-  }
-}

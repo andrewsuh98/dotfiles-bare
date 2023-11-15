@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "> [!FAIL] \n> ",
-    "uid" : "D893A61D-0725-45B6-9962-88ABC45F7760",
-    "name" : "fail callout",
-    "keyword" : "fail"
-  }
-}

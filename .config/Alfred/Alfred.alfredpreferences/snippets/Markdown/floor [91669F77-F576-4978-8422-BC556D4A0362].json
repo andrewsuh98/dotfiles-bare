@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "\\lfloor {cursor} \\rfloor",
-    "uid" : "91669F77-F576-4978-8422-BC556D4A0362",
-    "name" : "floor",
-    "keyword" : "floor"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "$$\n\\begin{align}\n\n\\end{align}\n$$",
-    "uid" : "6A305528-D5F0-42B1-9BEE-5E84E2348057",
-    "name" : "math-vim",
-    "keyword" : "math"
-  }
-}

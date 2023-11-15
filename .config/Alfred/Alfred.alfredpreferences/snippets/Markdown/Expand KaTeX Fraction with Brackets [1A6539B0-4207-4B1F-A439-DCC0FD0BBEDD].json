@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "\\frac{{cursor}}{}",
-    "uid" : "1A6539B0-4207-4B1F-A439-DCC0FD0BBEDD",
-    "name" : "Expand KaTeX Fraction with Brackets",
-    "keyword" : "frac"
-  }
-}

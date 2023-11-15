@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "$O({cursor})$",
-    "uid" : "C0F204A5-1C5A-466A-958A-ECBDA55B3851",
-    "name" : "Big-O",
-    "keyword" : "O"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "source venv\/bin\/activate",
-    "uid" : "F960DA49-4737-4CCF-A83F-39E95EDAFAA3",
-    "name" : "activate python virtual environment",
-    "keyword" : "venv"
-  }
-}

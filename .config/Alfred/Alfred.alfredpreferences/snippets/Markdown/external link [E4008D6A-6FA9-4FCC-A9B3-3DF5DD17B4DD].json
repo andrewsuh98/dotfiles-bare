@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "[{cursor}]({clipboard})",
-    "uid" : "E4008D6A-6FA9-4FCC-A9B3-3DF5DD17B4DD",
-    "name" : "external link",
-    "keyword" : "link"
-  }
-}

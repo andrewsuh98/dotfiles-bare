@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "> [!CHECK] \n> ",
-    "uid" : "B867AA32-E45F-4253-B0A3-DD81946A42C0",
-    "name" : "check callout",
-    "keyword" : "success"
-  }
-}

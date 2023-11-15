@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "```python\n{cursor}\n```",
-    "uid" : "9BF78080-8B9A-4B5A-8542-91A3F41BD259",
-    "name" : "python code block",
-    "keyword" : "py"
-  }
-}
