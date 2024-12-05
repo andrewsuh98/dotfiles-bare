@@ -12,7 +12,8 @@ return {
 		vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
 		local cmp = require("cmp")
 		local defaults = require("cmp.config.default")()
-		local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+		-- TODO remove comment
+		-- local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 		return {
 			completion = {
 				completeopt = "menu,menuone,noinsert",
@@ -74,7 +75,8 @@ return {
 			},
 			sorting = defaults.sorting,
 			-- add parentheses after selecting function or method
-			cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done()),
+			-- TODO remove comment
+			-- cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done()),
 		}
 	end,
 	---@param opts cmp.ConfigSchema

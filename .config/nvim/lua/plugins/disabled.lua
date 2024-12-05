@@ -5,4 +5,7 @@ return {
 	{ "folke/neoconf.nvim", enabled = false },
 	{ "folke/neodev.nvim", enabled = false },
 	{ "nvim-treesitter/nvim-treesitter-context", enabled = false },
+	{ "folke/flash.nvim", enabled = false },
+	-- TODO remove comment?
+	{ "windwp/nvim-autopairs", enabled = false },
 }
