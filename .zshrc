@@ -119,6 +119,7 @@ alias nvimplugins="nvim ~/.config/nvim/lua/andrewsuh/plugins.lua"
 alias p10kconfig="nvim ~/.p10k.zsh"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias chrome="open -a 'Google Chrome'"
+alias arc="open -a 'Arc'"
 alias python="python3"
 alias lg="lazygit"
 
