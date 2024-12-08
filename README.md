@@ -107,7 +107,27 @@ brew bundle install
 
 ---
 
-## 6. Configure iTerm2
+## 6. Configure Karabiner Elements
+
+1. **Open Karabiner-Elements**:
+   - Launch Karabiner-Elements from your Applications folder or by running:
+
+     ```bash
+     open -a "Karabiner-Elements"
+     ```
+
+2. **Grant Necessary Permissions**:
+   - When prompted, grant the required permissions:
+     - **Input Monitoring**: Go to **System Preferences** > **Privacy & Security** > **Input Monitoring**, and ensure `Karabiner-Elements` is checked.
+     - **Accessibility Access**: Go to **System Preferences** > **Privacy & Security** > **Accessibility**, and ensure `Karabiner-Elements` is checked.
+
+3. **Check Simple Modifications**:
+   - Open Karabiner-Elements and verify that needed simple modifications are working.
+   - **Note**: Configured remappings from the settings file might not work if the keyboard hardware ID has changed. If so, update the settings in to match the current keyboard.
+
+---
+
+## 7. Configure iTerm2
 
 1. Open iTerm2.
 2. Go to **Settings** -> **General** -> **Preferences**.
@@ -116,7 +136,7 @@ brew bundle install
 
 ---
 
-## 7. Set Up Neovim
+## 8. Set Up Neovim
 
 1. Open Neovim and trigger the installation of plugins.
 2. Run the health check in Neovim:
