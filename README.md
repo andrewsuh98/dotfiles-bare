@@ -147,4 +147,12 @@ brew bundle install
 
 ---
 
+## 9. Change macOS Settings
+
+1. **Change Scrollbar Behavior**:
+   - Go to **System Preferences** > **Appearance**.
+   - Under **Show scroll bars**, select **"When scrolling"**.
+
+---
+
 That's it! Your system should now be configured with your dotfiles.
