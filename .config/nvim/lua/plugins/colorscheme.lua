@@ -5,6 +5,7 @@ return {
     priority = 1000, -- make sure to load this before all the other start plugins
     opts = {
       options = {
+        transparent = true,
         styles = { -- Style to be applied to different syntax groups
           comments = "italic", -- Value is any valid attr-list value `:help attr-list`
           conditionals = "NONE",
