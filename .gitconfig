@@ -1,21 +1,5 @@
-[color]
-	ui = true
-[push]
-	default = current
-[fetch]
-	prune = true
-[core]
-	autocrlf = false
-	preloadindex = true
-	fscache = true
-	symlinks = false
-	longpaths = true
-[log]
-	decorate = short
-[http]
-	sslVerify = false
-[pack]
-	useSparse = true
 [user]
-	name = Andrew Suh
-  email = asuh1@wayfair.com
+	name = andrewsuh98
+	email = andrewsuh98@gmail.com
+[init]
+	defaultBranch = main

@@ -139,9 +139,3 @@ autoload -U compinit && compinit u-
 # enable vim mode
 bindkey -v
 bindkey -M viins 'kj' vi-cmd-mode
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ws188m/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ws188m/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/ws188m/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ws188m/google-cloud-sdk/completion.zsh.inc'; fi
