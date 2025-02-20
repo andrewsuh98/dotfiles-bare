@@ -122,6 +122,8 @@ alias chrome="open -a 'Google Chrome'"
 alias arc="open -a 'Arc'"
 alias python="python3"
 alias lg="lazygit"
+alias sqlfluff="~/.local/share/nvim/mason/bin/sqlfluff"
+alias pip="pip3"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -138,3 +140,9 @@ autoload -U compinit && compinit u-
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ws188m/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ws188m/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ws188m/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ws188m/google-cloud-sdk/completion.zsh.inc'; fi
