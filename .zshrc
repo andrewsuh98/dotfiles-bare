@@ -136,6 +136,5 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f $(brew --prefix)/etc/profile.d/autojump.sh ] && . $(brew --prefix)/etc/profile.d/autojump.sh
 autoload -U compinit && compinit u-
 
-# enable vim mode
-bindkey -v
-bindkey -M viins 'kj' vi-cmd-mode
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
