@@ -11,7 +11,7 @@ return {
 					conditionals = "NONE",
 					constants = "NONE",
 					functions = "NONE",
-					keywords = "italic",
+					keywords = "NONE",
 					numbers = "NONE",
 					operators = "NONE",
 					strings = "NONE",
