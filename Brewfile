@@ -1,4 +1,3 @@
-# tap "1password/tap"
 tap "homebrew/bundle"
 tap "romkatv/powerlevel10k"
 brew "eza"
@@ -14,28 +13,19 @@ brew "powerlevel10k"
 brew "ripgrep"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
-# cask "1password"
 # cask "adguard"
 cask "arc"
 # cask "bartender"
-# cask "dropbox"
 cask "font-meslo-lg-nerd-font"
 # cask "istat-menus"
 cask "iterm2"
 cask "karabiner-elements"
-# cask "keyboardcleantool"
-# cask "logi-options+"
-# cask "microsoft-auto-update"
-# cask "microsoft-edge"
-# cask "microsoft-excel"
-# cask "microsoft-powerpoint"
-# cask "microsoft-word"
-# cask "monitorcontrol"
+cask "keyboardcleantool"
+cask "monitorcontrol"
 # cask "obsidian"
 cask "raycast"
 # cask "slack"
 # cask "soundsource"
-# cask "visual-studio-code"
-# mas "Fantastical", id: 975937182
-# mas "Spark", id: 1176895641
-# mas "Things", id: 904280696
+mas "Fantastical", id: 975937182
+mas "Spark", id: 1176895641
+mas "Things", id: 904280696
