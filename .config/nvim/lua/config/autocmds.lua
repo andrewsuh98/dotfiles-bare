@@ -3,7 +3,7 @@
 -- Add any additional autocmds here
 
 vim.filetype.add({
-  extension = {
-    bq = "sql", -- Associate .bq files with the 'sql' file type
-  },
+	extension = {
+		bq = "sql", -- Associate .bq files with the 'sql' file type
+	},
 })
