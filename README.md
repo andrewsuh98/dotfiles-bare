@@ -132,7 +132,7 @@ brew bundle install
 1. Open iTerm2.
 2. Go to **Settings** -> **General** -> **Preferences**.
 3. Check the box to "Load preferences from a custom folder or URL."
-4. Select your configuration folder `~/.config/iterm2_config`.
+4. Select your configuration folder `~/.config/iterm2`.
 
 ---
 
