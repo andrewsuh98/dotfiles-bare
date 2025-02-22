@@ -13,8 +13,7 @@ local function map(mode, lhs, rhs, opts)
 	end
 end
 
--- "kj" as escape
--- map("i", "kj", "<Esc>", { desc = "Escape" })
+local map = vim.keymap.set
 
 -- remove lazyvim window mappings
 map("n", "<leader>ww", "<Nop>")
@@ -49,3 +48,49 @@ map("n", "-", "<C-x>", { desc = "Decrement number" })
 
 -- Select all
 map("n", "<C-a>", "gg<S-v>G", { desc = "Select all" })
+
+-- Yank the first diagnostic on the current line
+map("n", "yd", function()
+	local bufnr = 0 -- Current buffer
+	local cursor_pos = vim.api.nvim_win_get_cursor(0) -- Get cursor position (row, col)
+	local line = cursor_pos[1] - 1 -- Convert to 0-based index
+
+	-- Get diagnostics at the current line
+	local diagnostics = vim.diagnostic.get(bufnr, { lnum = line })
+
+	if #diagnostics == 0 then
+		print("No diagnostics to yank.")
+		return
+	end
+
+	-- Copy only the first diagnostic message
+	local message = diagnostics[1].message
+	vim.fn.setreg("+", message) -- Copy to system clipboard
+	print("First in-line diagnostic yanked")
+end, { desc = "Yank first diagnostic message" })
+
+-- Yank all diagnostics on the current line
+map("n", "yD", function()
+	local bufnr = 0 -- Current buffer
+	local cursor_pos = vim.api.nvim_win_get_cursor(0) -- Get cursor position (row, col)
+	local line = cursor_pos[1] - 1 -- Convert to 0-based index
+
+	-- Get all diagnostics at the current line
+	local diagnostics = vim.diagnostic.get(bufnr, { lnum = line })
+
+	if #diagnostics == 0 then
+		print("No diagnostics to yank.")
+		return
+	end
+
+	-- Collect all diagnostic messages
+	local messages = {}
+	for _, diag in ipairs(diagnostics) do
+		table.insert(messages, diag.message)
+	end
+
+	-- Concatenate messages into a single string with line breaks
+	local result = table.concat(messages, "\n")
+	vim.fn.setreg("+", result) -- Copy to system clipboard
+	print("All in-line diagnostics yanked")
+end, { desc = "Yank all diagnostic messages" })
