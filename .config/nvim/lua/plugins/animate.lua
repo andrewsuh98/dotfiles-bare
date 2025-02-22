@@ -3,27 +3,28 @@ return {
 	opts = {
 
 		scroll = {
-			enabled = false,
+			enabled = true,
 			animate = {
 				-- default: step = 15, total = 250
-				duration = { step = 15, total = 250 },
+				duration = { step = 5, total = 150 },
 				easing = "linear",
+				fps = 120,
 			},
 
 			-- faster animation when repeating scroll after delay
 			animate_repeat = {
-				delay = 100, -- delay in ms before using the repeat animation
-				duration = { step = 5, total = 50 },
+				delay = 50, -- delay in ms before using the repeat animation
+				duration = { step = 5, total = 25 }, -- default: step = 5, total = 50
 				easing = "linear",
 			},
 		},
 
 		indent = {
 			animate = {
-				enabled = false,
+				enabled = true,
 				duration = {
 					step = 15, -- default: 20
-					total = 350, -- default: 500
+					total = 400, -- default: 500
 				},
 			},
 		},
