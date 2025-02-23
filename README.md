@@ -127,16 +127,7 @@ brew bundle install
 
 ---
 
-## 7. Configure iTerm2
-
-1. Open iTerm2.
-2. Go to **Settings** -> **General** -> **Preferences**.
-3. Check the box to "Load preferences from a custom folder or URL."
-4. Select your configuration folder `~/.config/iterm2`.
-
----
-
-## 8. Set Up Neovim
+## 7. Set Up Neovim
 
 1. Open Neovim and trigger the installation of plugins.
 2. Run the health check in Neovim:
@@ -147,7 +138,7 @@ brew bundle install
 
 ---
 
-## 9. Change macOS Settings
+## 8. Change macOS Settings
 
 1. **Change Scrollbar Behavior**:
    - Go to **System Preferences** > **Appearance**.
