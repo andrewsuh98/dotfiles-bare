@@ -146,3 +146,18 @@ if [ -f '/Users/ws188m/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ws188m/g
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ws188m/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ws188m/google-cloud-sdk/completion.zsh.inc'; fi
+
+# ----- eza -----
+export EZA_COLORS="sc=33"
+alias l="eza --icons"
+alias ls="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions"
+alias la="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions -all"
+alias ll="eza --long --git --icons -all"
+alias lt="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree"
+alias lt1="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree --level=1"
+alias lt2="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree --level=2"
+alias lt3="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree --level=3"
+alias lta="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree --all"
+alias lta1="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree --level=1 --all"
+alias lta2="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree --level=2 -all"
+alias lta3="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree --level=3 -all"
