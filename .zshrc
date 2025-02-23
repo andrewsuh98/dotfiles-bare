@@ -1,25 +1,11 @@
 # run neofetch on startup
 fastfetch
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# this sets theme for p10k
-source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -116,7 +102,8 @@ alias vimconfig="nvim ~/.vimrc"
 alias nvimconfig="nvim ~/.config/nvim/"
 alias nvimcolorscheme="nvim ~/.config/nvim/lua/andrewsuh/colorscheme.lua"
 alias nvimplugins="nvim ~/.config/nvim/lua/andrewsuh/plugins.lua"
-alias p10kconfig="nvim ~/.p10k.zsh"
+alias omp="oh-my-posh"
+alias ompconfig="nvim ~/.config/ohmyposh/ohmyposh.toml"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias chrome="open -a 'Google Chrome'"
 alias arc="open -a 'Arc'"
@@ -125,8 +112,11 @@ alias lg="lazygit"
 alias sqlfluff="~/.local/share/nvim/mason/bin/sqlfluff"
 alias pip="pip3"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# load oh-my-posh
+# don't load on Apple default terminal
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(oh-my-posh init zsh --config "~/.config/ohmyposh/ohmyposh.toml")"
+fi
 
 # syntax highlighting plugin
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
