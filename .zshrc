@@ -124,6 +124,7 @@ alias chrome="open -a 'Google Chrome'"
 alias arc="open -a 'Arc'"
 alias python="python3"
 alias lg="lazygit"
+alias lgdf="lazygit --git-dir=$HOME/.cfg --work-tree=$HOME"
 alias sqlfluff="~/.local/share/nvim/mason/bin/sqlfluff"
 alias pip="pip3"
 
