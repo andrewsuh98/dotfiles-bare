@@ -8,19 +8,10 @@ source $ZSH/oh-my-zsh.sh
 # Run fastfetch after the environment is fully loaded
 fastfetch
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# Load oh-my-posh
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/omp.config.toml)"
 fi
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# this sets theme for p10k
-source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -115,7 +106,7 @@ alias vimconfig="nvim ~/.vimrc"
 alias nvimconfig="nvim ~/.config/nvim/"
 alias nvimcolorscheme="nvim ~/.config/nvim/lua/andrewsuh/colorscheme.lua"
 alias nvimplugins="nvim ~/.config/nvim/lua/andrewsuh/plugins.lua"
-alias p10kconfig="nvim ~/.p10k.zsh"
+alias ompconfig="nvim ~/.config/oh-my-posh/omp.config.toml"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias chrome="open -a 'Google Chrome'"
 alias arc="open -a 'Arc'"
@@ -139,9 +130,6 @@ alias lta="eza --long --git --no-filesize --no-time --icons --no-user --no-permi
 alias lta1="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree --level=1 --all"
 alias lta2="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree --level=2 -all"
 alias lta3="eza --long --git --no-filesize --no-time --icons --no-user --no-permissions --tree --level=3 -all"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # syntax highlighting plugin
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
