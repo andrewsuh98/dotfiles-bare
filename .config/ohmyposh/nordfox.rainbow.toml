@@ -145,7 +145,7 @@ final_space = true
 
   [[blocks.segments]]
     leading_diamond = ''
-    template = ' {{ if gt .Code 0 }}{{ else }}{{ end }}  '
+    template = ' {{ if gt .Code 0 }}{{ else }}{{ end }} '
     foreground = 'p:white'
     background = 'p:blue'
     type = 'status'
