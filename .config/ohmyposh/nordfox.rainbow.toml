@@ -45,9 +45,8 @@ final_space = true
   newline = true
 
   [[blocks.segments]]
-    leading_diamond = ''
     trailing_diamond = ''
-    template = '{{ if .SSHSession }} {{ end }}{{ .UserName }}@{{ .HostName }} '
+    template = ' {{ if .SSHSession }} {{ end }}{{ .UserName }}@{{ .HostName }} '
     foreground = 'p:black'
     background = 'p:white'
     type = 'session'
@@ -146,8 +145,7 @@ final_space = true
 
   [[blocks.segments]]
     leading_diamond = ''
-    trailing_diamond = ''
-    template = ' {{ if gt .Code 0 }}{{ else }}{{ end }} '
+    template = ' {{ if gt .Code 0 }}{{ else }}{{ end }}  '
     foreground = 'p:white'
     background = 'p:blue'
     type = 'status'
@@ -157,32 +155,6 @@ final_space = true
     [blocks.segments.properties]
       always_enabled = true
 
-
-[[tooltips]]
-  leading_diamond = ''
-  trailing_diamond = ''
-  template = '  {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }} '
-  foreground = 'p:white'
-  background = 'p:orange'
-  type = 'aws'
-  style = 'diamond'
-  tips = ['aws']
-
-  [tooltips.properties]
-    display_default = true
-
-[[tooltips]]
-  leading_diamond = ''
-  trailing_diamond = ''
-  template = '  {{ .Name }} '
-  foreground = 'p:white'
-  background = 'p:blue'
-  type = 'az'
-  style = 'diamond'
-  tips = ['az']
-
-  [tooltips.properties]
-    display_default = true
 
 [[blocks]]
   type = 'prompt'
