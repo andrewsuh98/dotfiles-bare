@@ -11,7 +11,6 @@ fastfetch
 # Load oh-my-posh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/nordfox.rainbow.toml)"
-  # eval "$(oh-my-posh init zsh)"
 fi
 
 # Set list of themes to pick from when loading at random
@@ -107,7 +106,6 @@ alias vimconfig="nvim ~/.vimrc"
 alias nvimconfig="nvim ~/.config/nvim/"
 alias nvimcolorscheme="nvim ~/.config/nvim/lua/andrewsuh/colorscheme.lua"
 alias nvimplugins="nvim ~/.config/nvim/lua/andrewsuh/plugins.lua"
-alias ompconfig="nvim ~/.config/oh-my-posh/omp.config.toml"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias chrome="open -a 'Google Chrome'"
 alias arc="open -a 'Arc'"
