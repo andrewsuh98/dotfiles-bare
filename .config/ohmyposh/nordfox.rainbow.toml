@@ -87,7 +87,8 @@ final_space = true
     style = 'powerline'
 
 [[blocks]]
-  type = 'rprompt'
+  type = 'prompt'
+  alignment = 'right'
 
   [[blocks.segments]]
     template = ' '
