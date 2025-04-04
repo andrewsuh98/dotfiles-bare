@@ -10,6 +10,9 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/nordfox.rainbow.toml)"
 fi
 
+# Export .env file for secrets
+[ -f ~/.env ] && source ~/.env
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
