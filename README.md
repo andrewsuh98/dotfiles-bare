@@ -136,6 +136,13 @@ brew bundle install
     :checkhealth
     ```
 
+3. Setup API key for avante.nvim:
+
+ ```bash
+ touch ~/.env
+ echo 'export ANTHROPIC_API_KEY="Your API Key"' >> ~/.env
+ ```
+
 ---
 
 ## 8. Change macOS Settings
