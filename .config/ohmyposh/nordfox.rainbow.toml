@@ -113,7 +113,7 @@ final_space = true
       fetch_version = false
 
   [[blocks.segments]]
-    template = ' '
+    template = ' {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}'
     foreground = 'p:yellow'
     background = 'transparent'
     type = 'python'
@@ -122,7 +122,7 @@ final_space = true
     [blocks.segments.properties]
       display_mode = 'files'
       fetch_version = false
-      fetch_virtual_env = false
+      fetch_virtual_env = true
 
   [[blocks.segments]]
     template = 'in <p:blue><b>{{ .Name }}</b></> '
