@@ -13,6 +13,9 @@ return {
 			max_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
 			--reasoning_effort = "medium", -- low|medium|high, only used for reasoning models
 		},
+		behavior = {
+			enable_claude_text_editor_tool_mode = true,
+		},
 	},
 	dependencies = {
 		"nvim-treesitter/nvim-treesitter",
