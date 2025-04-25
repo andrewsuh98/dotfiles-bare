@@ -59,7 +59,7 @@ final_space = true
     background = 'transparent'
 
     [blocks.segments.properties]
-      style = 'mixed'
+      style = 'full'
 
   [[blocks.segments]]
     type = 'git'
@@ -86,6 +86,17 @@ final_space = true
   alignment = 'right'
 
   [[blocks.segments]]
+    type = 'status'
+    template = '{{ if gt .Code 0 }}{{ else }}{{ end }}  '
+    style = 'plain'
+    foreground = 'p:green'
+    background = 'transparent'
+    foreground_templates = ['{{ if gt .Code 0 }}p:red{{ end }}']
+
+    [blocks.segments.properties]
+      always_enabled = true
+
+  [[blocks.segments]]
     type = 'node'
     template = ' '
     style = 'plain'
@@ -109,7 +120,7 @@ final_space = true
 
   [[blocks.segments]]
     type = 'python'
-    template = ' {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} '
+    template = ' {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}'
     style = 'plain'
     foreground = 'p:yellow'
     background = 'transparent'
@@ -120,34 +131,22 @@ final_space = true
       fetch_virtual_env = true
 
   [[blocks.segments]]
-    type = 'status'
-    template = '{{ if gt .Code 0 }}{{ else }}{{ end }} '
+    type = 'shell'
+    template = 'in <p:blue>{{ .Name }}</>'
     style = 'plain'
-    foreground = 'p:green'
+    foreground = 'p:white'
     background = 'transparent'
-    foreground_templates = ['{{ if gt .Code 0 }}p:red{{ end }}']
-
-    [blocks.segments.properties]
-      always_enabled = true
-
 
   [[blocks.segments]]
     type = 'executiontime'
-    template = ' in {{ .FormattedMs }}'
+    template = ' took <p:yellow>{{ .FormattedMs }}</>'
     style = 'plain'
-    foreground = 'p:yellow'
+    foreground = 'p:white'
     background = 'transparent'
 
     [blocks.segments.properties]
       cache_duration = 'none'
       threshold = 3000
-
-  [[blocks.segments]]
-    type = 'shell'
-    template = ' in <p:blue>{{ .Name }}</>'
-    style = 'plain'
-    foreground = 'p:white'
-    background = 'transparent'
 
 
 [[blocks]]
