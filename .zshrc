@@ -7,7 +7,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Load oh-my-posh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/nordfox.toml)"
+  eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/minimal.toml)"
 fi
 
 # Export .env file for secrets
