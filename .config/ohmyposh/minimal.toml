@@ -32,6 +32,13 @@ final_space = true
   #   background = 'transparent'
 
   [[blocks.segments]]
+    type = 'root'
+    template = '  '
+    style = 'plain'
+    foreground = 'white'
+    background = 'transparent'
+
+  [[blocks.segments]]
     type = 'path'
     template = '<b>{{ path .Path .Location }}</b> '
     style = 'plain'
@@ -59,13 +66,6 @@ final_space = true
       commit_icon = '@'
       fetch_status = true
       fetch_upstream_icon = true
-
-  [[blocks.segments]]
-    type = 'root'
-    template = '  '
-    style = 'plain'
-    foreground = 'white'
-    background = 'transparent'
 
 [[blocks]]
   type = 'prompt'
