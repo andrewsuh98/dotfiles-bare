@@ -107,14 +107,14 @@ final_space = true
 
   [[blocks.segments]]
     type = 'python'
-    template = ' {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}'
+    template = '  {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} '
     style = 'plain'
     foreground = 'yellow'
     background = 'transparent'
 
     [blocks.segments.properties]
       display_mode = 'environment'
-      fetch_version = false
+      fetch_version = true
       fetch_virtual_env = true
 
   [[blocks.segments]]
