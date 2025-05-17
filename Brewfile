@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "romkatv/powerlevel10k"
+brew "btop"
 brew "chafa"
 brew "eza"
 brew "fastfetch"
