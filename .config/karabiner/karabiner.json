@@ -204,7 +204,7 @@
                         ]
                     },
                     {
-                        "description": "Left ctrl + hjkl to arrow keys Vim",
+                        "description": "Left ctrl + hjkl to arrow keys Vim (except in Kitty)",
                         "manipulators": [
                             {
                                 "from": {
@@ -215,7 +215,13 @@
                                     }
                                 },
                                 "to": [{ "key_code": "left_arrow" }],
-                                "type": "basic"
+                                "type": "basic",
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "bundle_identifiers": ["^net\\.kovidgoyal\\.kitty$"]
+                                    }
+                                ]
                             },
                             {
                                 "from": {
@@ -226,7 +232,13 @@
                                     }
                                 },
                                 "to": [{ "key_code": "down_arrow" }],
-                                "type": "basic"
+                                "type": "basic",
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "bundle_identifiers": ["^net\\.kovidgoyal\\.kitty$"]
+                                    }
+                                ]
                             },
                             {
                                 "from": {
@@ -237,7 +249,13 @@
                                     }
                                 },
                                 "to": [{ "key_code": "up_arrow" }],
-                                "type": "basic"
+                                "type": "basic",
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "bundle_identifiers": ["^net\\.kovidgoyal\\.kitty$"]
+                                    }
+                                ]
                             },
                             {
                                 "from": {
@@ -248,7 +266,13 @@
                                     }
                                 },
                                 "to": [{ "key_code": "right_arrow" }],
-                                "type": "basic"
+                                "type": "basic",
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "bundle_identifiers": ["^net\\.kovidgoyal\\.kitty$"]
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -326,12 +350,12 @@
                             "to": [{ "key_code": "delete_or_backspace" }]
                         },
                         {
-                            "from": { "key_code": "delete_or_backspace" },
-                            "to": [{ "key_code": "backslash" }]
-                        },
-                        {
                             "from": { "key_code": "caps_lock" },
                             "to": [{ "key_code": "left_control" }]
+                        },
+                        {
+                            "from": { "key_code": "delete_or_backspace" },
+                            "to": [{ "key_code": "backslash" }]
                         }
                     ]
                 }

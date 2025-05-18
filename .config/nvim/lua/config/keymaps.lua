@@ -2,17 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-local function map(mode, lhs, rhs, opts)
-	local keys = require("lazy.core.handler").handlers.keys
-	---@cast keys LazyKeysHandler
-	-- do not create the keymap if a lazy keys handler exists
-	if not keys.active[keys.parse({ lhs, mode = mode }).id] then
-		opts = opts or {}
-		opts.silent = opts.silent ~= false
-		vim.keymap.set(mode, lhs, rhs, opts)
-	end
-end
-
 local map = vim.keymap.set
 
 -- remove lazyvim window mappings
@@ -26,12 +15,6 @@ map("n", "<C-Up>", "<Nop>")
 map("n", "<C-Down>", "<Nop>")
 map("n", "<C-Left>", "<Nop>")
 map("n", "<C-Right>", "<Nop>")
-
--- arrow keys switch windows in normal mode
-map("n", "<Up>", "<C-w>k", { desc = "Go to the up window" })
-map("n", "<Down>", "<C-w>j", { desc = "Go to the down window" })
-map("n", "<Left>", "<C-w>h", { desc = "Go to the left window" })
-map("n", "<Right>", "<C-w>l", { desc = "Go to the right window" })
 
 -- resize windows
 map("n", "<C-w><Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })

@@ -1,4 +1,3 @@
-
 # Dotfiles Setup Guide
 
 Follow these steps to set up your system with these dotfiles.
@@ -48,10 +47,10 @@ Alternatively:
 1. Create a [personal access token](https://github.com/settings/tokens).
 2. Run the following commands:
 
-    ```bash
-    echo ".cfg" >> .gitignore
-    git clone --bare https://github.com/andrewsuh98/dotfiles $HOME/.cfg
-    ```
+   ```bash
+   echo ".cfg" >> .gitignore
+   git clone --bare https://github.com/andrewsuh98/dotfiles $HOME/.cfg
+   ```
 
 3. Enter your GitHub email and your personal access token as the password.
 
@@ -105,11 +104,40 @@ Run the following command to install all applications listed in the `Brewfile`:
 brew bundle install
 ```
 
+Run any post-processing commands after installing applications:
+
+```bash
+pipx ensurepath
+```
+
 ---
 
-## 6. Configure Karabiner Elements
+## 6. Install Aider
+
+1. Install Python 3.12 using pyenv:
+
+```bash
+pyenv install 3.12
+```
+
+2. Load Python 3.12 in your current shell:
+
+```bash
+pyenv shell 3.12
+```
+
+3. Install aider-chat using pipx:
+
+```bash
+pipx install aider-chat --python python3.12
+```
+
+---
+
+## 7. Configure Karabiner Elements
 
 1. **Open Karabiner-Elements**:
+
    - Launch Karabiner-Elements from your Applications folder or by running:
 
      ```bash
@@ -117,6 +145,7 @@ brew bundle install
      ```
 
 2. **Grant Necessary Permissions**:
+
    - When prompted, grant the required permissions:
      - **Input Monitoring**: Go to **System Preferences** > **Privacy & Security** > **Input Monitoring**, and ensure `Karabiner-Elements` is checked.
      - **Accessibility Access**: Go to **System Preferences** > **Privacy & Security** > **Accessibility**, and ensure `Karabiner-Elements` is checked.
@@ -127,25 +156,25 @@ brew bundle install
 
 ---
 
-## 7. Set Up Neovim
+## 8. Set Up Neovim
 
 1. Open Neovim and trigger the installation of plugins.
 2. Run the health check in Neovim:
 
-    ```bash
-    :checkhealth
-    ```
+   ```bash
+   :checkhealth
+   ```
 
 3. Setup API key for avante.nvim:
 
- ```bash
- touch ~/.env
- echo 'export ANTHROPIC_API_KEY="Your API Key"' >> ~/.env
- ```
+```bash
+touch ~/.env
+echo 'export ANTHROPIC_API_KEY="Your API Key"' >> ~/.env
+```
 
 ---
 
-## 8. Change macOS Settings
+## 9. Change macOS Settings
 
 1. **Change Scrollbar Behavior**:
    - Go to **System Preferences** > **Appearance**.
