@@ -142,6 +142,8 @@ autoload -U compinit && compinit u-
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+bindkey -r '^T'
+bindkey '^F' fzf-file-widget
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/ws188m/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ws188m/google-cloud-sdk/path.zsh.inc'; fi
