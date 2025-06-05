@@ -182,4 +182,14 @@ echo 'export ANTHROPIC_API_KEY="Your API Key"' >> ~/.env
 
 ---
 
+## 10. Install Claude Code
+
+Install Claude Code using npm:
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+---
+
 That's it! Your system should now be configured with your dotfiles.
