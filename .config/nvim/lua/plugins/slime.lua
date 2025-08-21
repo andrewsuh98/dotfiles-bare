@@ -1,17 +1,14 @@
 return {
-	-- slime (REPL integration)
-	"jpalardy/vim-slime",
+	"klafyvel/vim-slime-cells",
+	dependencies = {
+		{
+			"jpalardy/vim-slime",
+			init = function()
+				vim.g.slime_no_mappings = 1
+			end,
+		},
+	},
 	lazy = false,
-
-	-- init = function()
-	--        vim.g.slime_no_mappings = 1
-	-- end,
-
-	-- keys = {
-	-- 	{ "<leader>rc", "<cmd>SlimeConfig<cr>", desc = "Slime Config" },
-	-- 	{ "<leader>rr", "<Plug>SlimeSendCell<BAR>/^# %%<CR>", desc = "Slime Send Cell" },
-	-- 	{ "<leader>rr", ":<C-u>'<,'>SlimeSend<CR>", mode = "v", desc = "Slime Send Selection" },
-	-- },
 
 	config = function()
 		vim.g.slime_target = "tmux"
@@ -21,5 +18,33 @@ return {
 		}
 		vim.g.slime_cell_delimiter = "# %%"
 		vim.g.slime_bracketed_paste = 1
+		vim.g.slime_dont_ask_default = 1
 	end,
+
+	keys = {
+		{
+			"<C-c><C-c>",
+			"<Plug>SlimeCellsSendAndGoToNext",
+			mode = "n",
+			desc = "Send cell and go to next",
+		},
+		{
+			"<C-c><C-c>",
+			"<Plug>SlimeRegionSend",
+			mode = "v",
+			desc = "Send visual selection",
+		},
+		{
+			"<C-c><C-n>",
+			"<Plug>SlimeCellsNext",
+			mode = "n",
+			desc = "Go to next cell",
+		},
+		{
+			"<C-c><C-p>",
+			"<Plug>SlimeCellsPrev",
+			mode = "n",
+			desc = "Go to previous cell",
+		},
+	},
 }
