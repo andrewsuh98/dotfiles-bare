@@ -207,6 +207,14 @@
                         "description": "Left ctrl + hjkl to arrow keys Vim (except in Kitty)",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^net\\.kovidgoyal\\.kitty$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
@@ -215,15 +223,17 @@
                                     }
                                 },
                                 "to": [{ "key_code": "left_arrow" }],
-                                "type": "basic",
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_unless",
-                                        "bundle_identifiers": ["^net\\.kovidgoyal\\.kitty$"]
-                                    }
-                                ]
+                                "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^net\\.kovidgoyal\\.kitty$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
@@ -232,15 +242,17 @@
                                     }
                                 },
                                 "to": [{ "key_code": "down_arrow" }],
-                                "type": "basic",
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_unless",
-                                        "bundle_identifiers": ["^net\\.kovidgoyal\\.kitty$"]
-                                    }
-                                ]
+                                "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^net\\.kovidgoyal\\.kitty$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
@@ -249,15 +261,17 @@
                                     }
                                 },
                                 "to": [{ "key_code": "up_arrow" }],
-                                "type": "basic",
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_unless",
-                                        "bundle_identifiers": ["^net\\.kovidgoyal\\.kitty$"]
-                                    }
-                                ]
+                                "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^net\\.kovidgoyal\\.kitty$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -266,13 +280,7 @@
                                     }
                                 },
                                 "to": [{ "key_code": "right_arrow" }],
-                                "type": "basic",
-                                "conditions": [
-                                    {
-                                        "type": "frontmost_application_unless",
-                                        "bundle_identifiers": ["^net\\.kovidgoyal\\.kitty$"]
-                                    }
-                                ]
+                                "type": "basic"
                             }
                         ]
                     }
