@@ -8,9 +8,9 @@ local opt = vim.opt
 opt.autowrite = false -- Disable auto write
 
 -- indentation
-opt.expandtab = false -- Use tabs instead of spaces
-opt.tabstop = 4
-opt.shiftwidth = 4
+-- opt.expandtab = false -- Use tabs instead of spaces
+-- opt.tabstop = 4
+-- opt.shiftwidth = 4
 
 -- Disable mouse mode
 opt.mouse = ""
