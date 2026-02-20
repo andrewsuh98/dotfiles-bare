@@ -158,3 +158,6 @@ eval $(thefuck --alias)
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+
+# Setup uv autocomplete
+eval "$(uv generate-shell-completion zsh)"
