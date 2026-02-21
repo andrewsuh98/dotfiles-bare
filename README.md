@@ -1,6 +1,8 @@
-# Dotfiles Setup Guide
+# Dotfiles (Archived)
 
-Follow these steps to set up your system with these dotfiles.
+This repo has been ported to chezmoi: https://github.com/andrewsuh98/dotfiles
+
+The setup guide below is for the previous git bare method and is no longer maintained.
 
 ---
 
